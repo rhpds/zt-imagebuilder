@@ -1,0 +1,58 @@
+== Create a blueprint
+
+Image Builder uses blueprints to create system images, however, none
+exist on this system yet.
+
+Select the _Create Blueprint_ button to start building your first
+blueprint.
+
+.Select Create Blueprint
+image::../assets/Create-Blueprint.png[Select Create Blueprint]
+
+The first step to creating a new blueprint is naming it. It is
+recommended that you also include a description so that others using
+this blueprint know what system image they are building. For this lab,
+use *node-app-server* as the _Name_ and *A node.js and NGINX installed
+web application server* as the _Description_.
+
+.Name Your Blueprint
+image::../assets/Create-blueprint-dialog.png[Name Your Blueprint]
+
+Click `+Next+`.
+
+.blueprint
+image::../assets/blueprint-next-button.png[blueprint]
+
+Next we’ll customize the blueprint.
+
+Add in the first package, `+nodejs+`, into the `+Available packages+`
+search bar. Once the filter has been applied, you should now see
+packages with `+nodejs+` included in their name. It might take a minute
+or two for packages to load.
+
+.add nodejs
+image::../assets/nodejs-select.png[add nodejs]
+
+[arabic]
+. Click on `+nodejs+`.
+. Click the `+>+` symbol to add it.
+
+Repeat these actions for the `+nginx+` package and then click `+Next+`.
+
+.added
+image::../assets/packages-added.png[added]
+
+Keep clicking the `+Next+` button until you reach the `+Other+` tab of
+the customizations section within the blueprint creation dialog. As you
+can see, image builder provides the ability to add custom kernel
+parameters, add users, open firewall ports, and more.
+
+Then, enter a hostname `+node-app-server+` for the image.
+
+image:../assets/node-app-server-hostname.png[../assets/node-app-server-hostname]
+
+Next, click `+Review+`
+image:../assets/review-tab-button.png[../assets/review-tab-button]
+
+Finally, click `+Save+` to save the blueprint.
+image:../assets/blueprint-save.png[../assets/blueprint-save]
