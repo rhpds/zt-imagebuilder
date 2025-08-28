@@ -50,7 +50,7 @@ Add the following user to the image.
 . Username: `+rhel+`
 . Password: `+redhat+`
 . SSH key: Copy and paste the following into the SSH key field.
-[source,js]
+[source,bash,run]
 ----
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBAo9hfNi44+HLA5QoAjTYcOswGeCN8X5mfOmDlWrFhwBULEEzkdNp5sGlEo3rZQjyPFIZOeCc7BBAIPkOQaQWD7vDSD5zGgTkTt1YsJLdQAOS+tR1/w4oWdWenvu1aSmi+vZgUWbTXVWCjE5lBsX5vd/xWVbT5I6p+W/HRKPZrWSK5sC9BFoB3X/34L671Qm4rEOHMDbdHo7BP1tRdqQhiKnmhVSJJN5v/JKoa56s3a/ejMS9OElCng0bJgh6t3r9siKmKaUPdxt6lzyVAeHD8IBYiha+vz4ffXncsD2YFP8V9MaNO6fkSFA6D9mFVLqjLgFzSvRrKBbqQWxjt0a7NL/JVsOkN0TeT90vQOL+KTTij9o5Ntfu6VlPLw6b4bu0FgMITF6IYdytGCkKS3kGll5rbQraQ3BXw6ohsj+HUuT6ojaoQvgnltIGGqCZR3CQgKqcsutR/KvHYiuNdPmpjaCfi3hxdLBUTHOHZrr/uKs9Lkrw7Kr+Ya60ypjt4F0=
 ----
