@@ -26,65 +26,48 @@ There are many optional customizations that can be made to the image. For the sa
 
 === Additional Packages
 
+Let's add the `+nginx+` package to the image.
+
+. Enter `+nginx+` in the search field.
+. Check the `+nginx+` package.
+
+.Add nginx
+image::nginx.png[add nginx]
+
+Feel free to add other packages to the image.
+
+Click `+Next+` when you are done.
+
+=== Users
+
+Add the following user to the image.
+
+. Username: `+rhel+`
+. Password: `+redhat+`
+. SSH key: Copy and paste the following into the SSH key field.
+[source,text]
+----
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBAo9hfNi44+HLA5QoAjTYcOswGeCN8X5mfOmDlWrFhwBULEEzkdNp5sGlEo3rZQjyPFIZOeCc7BBAIPkOQaQWD7vDSD5zGgTkTt1YsJLdQAOS+tR1/w4oWdWenvu1aSmi+vZgUWbTXVWCjE5lBsX5vd/xWVbT5I6p+W/HRKPZrWSK5sC9BFoB3X/34L671Qm4rEOHMDbdHo7BP1tRdqQhiKnmhVSJJN5v/JKoa56s3a/ejMS9OElCng0bJgh6t3r9siKmKaUPdxt6lzyVAeHD8IBYiha+vz4ffXncsD2YFP8V9MaNO6fkSFA6D9mFVLqjLgFzSvRrKBbqQWxjt0a7NL/JVsOkN0TeT90vQOL+KTTij9o5Ntfu6VlPLw6b4bu0FgMITF6IYdytGCkKS3kGll5rbQraQ3BXw6ohsj+HUuT6ojaoQvgnltIGGqCZR3CQgKqcsutR/KvHYiuNdPmpjaCfi3hxdLBUTHOHZrr/uKs9Lkrw7Kr+Ya60ypjt4F0=
+----
+[start=4]
+. Check the `+Administrator+` checkbox.
+. Click `+Review and finish+`.
+
+.Add user
+image::add_user.png[add user]
 
 
 
+== Review your blueprint
 
+There are many configurable options for the blueprint. For more information, see the https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/pdf/composing_a_customized_rhel_system_image/Red_Hat_Enterprise_Linux-10-Composing_a_customized_RHEL_system_image-en-US.pdf[Image Builder documentation].
 
-=== Name Your Blueprint
+In the `+Review+` menu, you can see the blueprint that will be created.
 
+.Review the blueprint
+image::review.png[review blueprint]
 
+Finally, click `+Save changes to blueprint+` to save the blueprint.
 
-
-
-
-
-== Name Your Blueprint
-
-The first step to creating a new blueprint is naming it. It is
-recommended that you also include a description so that others using
-this blueprint know what system image they are building. For this lab,
-use *node-app-server* as the _Name_ and *A node.js and NGINX installed
-web application server* as the _Description_.
-
-.Name Your Blueprint
-image::Create-blueprint-dialog.png[Name Your Blueprint]
-
-Click `+Next+`.
-
-.blueprint
-image::blueprint-next-button.png[blueprint]
-
-Next we’ll customize the blueprint.
-
-Add in the first package, `+nodejs+`, into the `+Available packages+`
-search bar. Once the filter has been applied, you should now see
-packages with `+nodejs+` included in their name. It might take a minute
-or two for packages to load.
-
-.add nodejs
-image::nodejs-select.png[add nodejs]
-
-[arabic]
-. Click on `+nodejs+`.
-. Click the `+>+` symbol to add it.
-
-Repeat these actions for the `+nginx+` package and then click `+Next+`.
-
-.added
-image::packages-added.png[added]
-
-Keep clicking the `+Next+` button until you reach the `+Other+` tab of
-the customizations section within the blueprint creation dialog. As you
-can see, image builder provides the ability to add custom kernel
-parameters, add users, open firewall ports, and more.
-
-Then, enter a hostname `+node-app-server+` for the image.
-
-image::node-app-server-hostname.png[node-app-server-hostname]
-
-Next, click `+Review+`
-image::review-tab-button.png[review-tab-button]
-
-Finally, click `+Save+` to save the blueprint.
-image::blueprint-save.png[blueprint-save]
+.Save changes to blueprint
+image::save_changes_to_blueprint.png[blueprint-save]
