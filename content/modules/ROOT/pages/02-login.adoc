@@ -14,7 +14,7 @@ into the Web Console:
 
 1 - Username:
 
-[source,text]
+[source,js]
 ----
 rhel
 ----
