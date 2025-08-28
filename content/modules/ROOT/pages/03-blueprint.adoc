@@ -1,3 +1,7 @@
+== Introduction
+
+Let's create an a qcow2 image blueprint for a node.js and NGINX installed web application server.
+
 == Create a blueprint
 
 Image Builder uses blueprints to create system images, however, none
@@ -6,8 +10,36 @@ exist on this system yet.
 Select the _Create Blueprint_ button to start building your first
 blueprint.
 
-.Select Create Blueprint
+.Click Create Blueprint
 image::Create-Blueprint.png[Select Create Blueprint]
+
+=== Image Output
+
+Let's specify the image output as a qcow2 file.
+
+.Select qcow2
+image::virtualization_qcow2.png[Select qcow2]
+
+`+qcow2+` (QEMU Copy-On-Write version 2) is a disk image file format used in virtualization environments. `+qcow2+` is the primary format used with KVM virtualization which is the hypervisor used by Red Hat Enterprise Linux.
+
+There are many optional customizations that can be made to the image. For the sake of brevity, advance the lab to the `+Additional packages+` menu by clicking `+Next+`.
+
+=== Additional Packages
+
+
+
+
+
+
+=== Name Your Blueprint
+
+
+
+
+
+
+
+== Name Your Blueprint
 
 The first step to creating a new blueprint is naming it. It is
 recommended that you also include a description so that others using
