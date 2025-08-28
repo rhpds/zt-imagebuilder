@@ -1,10 +1,26 @@
 ---
 virtualmachines:
   - name: "rhel"
-    image: "rhel-9-3-11-14-23"
+    image: "rhel-10-0-07-09-25-3"
+    bootloader: efi
     memory: "4G"
-    cores: 1
+    cores: 2
     image_size: "40G"
+    services:
+      - name: cockpit
+        ports:
+          - port: 9090
+            protocol: TCP
+            targetPort: 9090
+            name: cockpit
+    routes:
+      - name: cockpit
+        host: cockpit
+        service: cockpit
+        targetPort: 9090
+        tls: true
+        tls_termination: Edge
+
     tags:
       - key: "AnsibleGroup"
         value: "bastions"
