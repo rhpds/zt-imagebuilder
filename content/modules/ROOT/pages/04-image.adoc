@@ -5,7 +5,7 @@ Enterprise Linux build with Node.js and NGINX packages installed. Click
 the _Create image_ button near the top of the interface.
 
 .Create image
-image::../assets/Create-Image.png[Create image]
+image::Create-Image.png[Create image]
 
 The resulting dialog will ask several questions about how to build the
 image. The first, and most important question is _Type_. There are
@@ -22,7 +22,7 @@ the list that you can make images for cloud providers or other
 virtualization hypervisors.
 
 .Selecting a format
-image::../assets/image-create.png[Selecting a format]
+image::image-create.png[Selecting a format]
 
 Once you have specified the *QEMU Image (.qcow2)* as the _Type_ select
 the _Create_ button to create an image of this output format.
@@ -32,20 +32,20 @@ Click `+Next+`.
 You can review the image you’ve created in this menu. Click `+Create+`
 
 .save blueprint
-image::../assets/save-image.png[save blueprint]
+image::save-image.png[save blueprint]
 
 To view the progress of the image build, click on the `+Images+` tab.
 
 .select images tab
-image::../assets/images-tab.png[select images tab]
+image::images-tab.png[select images tab]
 
 Then you’ll be taken to the status of the image build.
 
 .status
-image::../assets/image-build-status.png[status]
+image::image-build-status.png[status]
 
 When the image build is complete, you can download the image by clicking
 `+Download+`.
 
 .download
-image::../assets/download.png[download]
+image::download.png[download]

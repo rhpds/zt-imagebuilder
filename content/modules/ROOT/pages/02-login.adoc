@@ -1,3 +1,5 @@
+:imagesdir: images
+
 == Log in to the Web Console
 
 Click on the tab titled *RHEL Web Console* at the top of your lab system
@@ -5,17 +7,17 @@ interface. Selecting this tab will open the lab system’s Web Console in
 a new browser tab or window.
 
 .web console
-image::../assets/pop-out-2.png[web console]
+image::pop-out-2.png[web console]
 
 Click `+Advanced+`
 
 .Connection not private
-image::../assets/connection-not-private.png[Connection not private]
+image::connection-not-private.png[Connection not private]
 
 Then click `+Proceed to rhel.xxxx.instruqt.io+`
 
 .Proceed
-image::../assets/proceed.png[Proceed]
+image::proceed.png[Proceed]
 
 Once the login page is presented, use the following credentials to log
 into the Web Console:
@@ -29,13 +31,13 @@ rhel
 
 2 - Password:
 
-[source,bash]
+[source,js,subs="+macros,+attributes",role=execute]
 ----
-redhat
+{bastion_ssh_password}
 ----
 
 .Web Console Login
-image::../assets/Web-console-login.png[Web Console Login]
+image::Web-console-login.png[Web Console Login]
 
 Now that you are logged into the Web Console, we must turn on
 administrative access.
@@ -43,7 +45,7 @@ administrative access.
 Click `+Turn on administrative access+`.
 
 .admin access
-image::../assets/turn-on-admin.png[admin access]
+image::turn-on-admin.png[admin access]
 
 Next do the following:
 
@@ -52,7 +54,7 @@ Next do the following:
 . Click `+Authenticate+`
 
 .auth
-image::../assets/auth.png[auth]
+image::auth.png[auth]
 
 == Navigate to Image Builder application
 
@@ -60,13 +62,13 @@ After logging into the Web Console, you’ll be looking at the Overview
 tab. Navigate to the Image Builder tab, as shown below:
 
 .Navigate to Image Builder
-image::../assets/Nav-ImageBuilder.png[Navigate to Image Builder]
+image::Nav-ImageBuilder.png[Navigate to Image Builder]
 
 Because you have not used Image Builder before, you will need to start
 the back-end service by clicking the _Start_ button.
 
 .Start Image Builder Service
-image::../assets/ImageBuilder-start-service.png[Start Image Builder
+image::ImageBuilder-start-service.png[Start Image Builder
 Service]
 
 Now that the back-end service has been started, you will notice that the
