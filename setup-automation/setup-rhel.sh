@@ -1,10 +1,14 @@
 #!/bin/bash
 
-# Install cockpit - this step is now in the lab content, but keep for automation
-dnf install -y cockpit-composer
+# Unregister and register the VM
+dnf -y remove katello-ca-consumer-*
+subscription-manager clean
+subscription-manager register --activationkey=$ACTIVATION_KEY --org=$ORG_ID --force
 
-# Pre-create cockpit config before installation
-mkdir -p /etc/cockpit
+# Install cockpit
+dnf install -y cockpit
+
+# Enable cockpit functionality in showroom.
 echo "[WebService]" > /etc/cockpit/cockpit.conf
 echo "Origins = https://cockpit-${GUID}.${DOMAIN}" >> /etc/cockpit/cockpit.conf
 echo "AllowUnencrypted = true" >> /etc/cockpit/cockpit.conf
