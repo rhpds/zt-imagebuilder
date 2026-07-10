@@ -12,6 +12,6 @@ dnf install -y cockpit
 echo "[WebService]" > /etc/cockpit/cockpit.conf
 echo "Origins = https://cockpit-${GUID}.${DOMAIN}" >> /etc/cockpit/cockpit.conf
 echo "AllowUnencrypted = true" >> /etc/cockpit/cockpit.conf
-systemctl enable --now cockpit.socket
 
-dnf remove -y cockpit-composer
+# Enable and start cockpit service
+systemctl enable --now cockpit.socket
